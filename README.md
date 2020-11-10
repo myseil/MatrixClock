@@ -1,0 +1,2 @@
+# MatrixClock
+一个使用ESP8266和LED点阵制作的高精度时钟
