@@ -15,13 +15,15 @@
 - 将固定时间滚动改为了随机时间滚动
   
 ## 如何制作
-* 下载[Gerber_共阳极PCB.zip](https://github.com/myseil/MatrixClock/raw/main/Gerber_%E5%85%B1%E9%98%B3%E6%9E%81PCB.zip)，然后到嘉立创5元打板。
-* 将打样回来的PCB用美工刀分开，分成两张PCB。
-* 根据[`Bom.html`]文件进行焊接，注意CH340E和TPYE-C母口的焊接，不要连锡，不然容易烧板子。
-* 焊接完成后，通过Type-C数据线连接电脑和板子，检查电脑是否正确识别。
-* 下载[Arduino](https://www.arduino.cc/en/software)，安装完成后用Arduino打开[`MatrixClock.ino`]，会提示是否创建文件夹，同意即可
-* 点击Arduion的上传按钮编译[`MatrixClock.ino`]文件，编译的同时按下PCB上面的[`重启`]和[`下载`]按键，然后松开[`重启`]按键，等待程序刷入即可。
-* 当Arduion提示完成后，按下PCB上面的[`重启`]按键，即可通过LED点阵看到效果。
+1. 下载[Gerber_共阳极PCB.zip](https://github.com/myseil/MatrixClock/raw/main/Gerber_%E5%85%B1%E9%98%B3%E6%9E%81PCB.zip)，然后到嘉立创5元打板。
+2. 将打样回来的PCB用美工刀分开，分成两张PCB。
+3. 根据[`Bom.html`]文件进行焊接，注意CH340E和TPYE-C母口的焊接，不要连锡，不然容易烧板子。
+4. 焊接完成后，通过Type-C数据线连接电脑和板子，检查电脑是否正确识别。
+5. 下载[Arduino](https://www.arduino.cc/en/software)，安装完成后用Arduino打开[`MatrixClock.ino`]，会提示是否创建文件夹，同意即可
+6. 点击Arduion的上传按钮编译[`MatrixClock.ino`]文件，编译的同时按下PCB上面的[`重启`]和[`下载`]按键，然后松开[`重启`]按键，等待程序刷入即可。
+7. 当Arduion提示完成后，按下PCB上面的[`重启`]按键，即可通过LED点阵看到效果。
+
+>注意：第一次会提示[`Setup`]，用手机通过[`Esptouch`]APP进行WIFI配网即可。
 
 
 ## 鸣谢
